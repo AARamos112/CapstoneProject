@@ -37,11 +37,52 @@ public class HomeController {
 		return "products";
 	}
 	
-	
 	@RequestMapping("/appliances")
 	public String appliances() 
 	{
 		return "appliances";
+	}
+	
+	@RequestMapping("/faq")
+	public String faq() 
+	{
+		return "faq";
+	}
+	
+	@RequestMapping("/whatWeDo")
+	public String whatWeDo() 
+	{
+		return "whatWeDo";
+	}
+	
+	@RequestMapping("/floors")
+	public String floors() 
+	{
+		return "floors";
+	}
+	
+	@RequestMapping("/countertops")
+	public String counterTops() 
+	{
+		return "counterTops";
+	}
+	
+	@RequestMapping("/lighting")
+	public String lighting() 
+	{
+		return "lighting";
+	}
+	
+	@RequestMapping("/cabinets")
+	public String cabinets() 
+	{
+		return "cabinets";
+	}
+	
+	@RequestMapping("/sinks")
+	public String sinks() 
+	{
+		return "sinks";
 	}
 	
 }

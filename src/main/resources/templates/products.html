@@ -7,7 +7,27 @@
 </head>
 <body>
 <div th:insert="navbar :: navbar">  </div>
-<div th:insert="navtab :: navtab">  </div>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" th:href="@{/appliances}">Appliances</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" th:href="@{/floors}">Floors</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" th:href="@{/countertops}">Countertops</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" th:href="@{/lighting}">Lighting</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" th:href="@{/cabinets}">Cabinets</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" th:href="@{/sinks}">Sinks and Faucets</a>
+  </li>
+</ul>
 
 </body>
 </html>

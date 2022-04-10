@@ -9,18 +9,24 @@
 
 <nav th:fragment="navtab" class="navbar navbar-expand-md navbar-light ">
 
-    <ul class="nav nav-tabs">
+ <ul class="nav nav-tabs">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Active</a>
+    <a class="nav-link active" aria-current="page" th:href="@{/appliances}">Appliances</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" th:href="@{/floors}">Floors</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" th:href="@{/countertops}">Countertops</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link disabled">Disabled</a>
+    <a class="nav-link" th:href="@{/lighting}">Lighting</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" th:href="@{/cabinets}">Cabinets</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" th:href="@{/sinks}">Sinks and Faucets</a>
   </li>
 </ul>
 </nav>
