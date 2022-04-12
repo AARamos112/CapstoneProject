@@ -85,4 +85,10 @@ public class HomeController {
 		return "sinks";
 	}
 	
+	@RequestMapping("/signin")
+	public String signin() 
+	{
+		return "signin";
+	}
+	
 }
