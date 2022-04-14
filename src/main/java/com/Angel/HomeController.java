@@ -91,4 +91,9 @@ public class HomeController {
 		return "signin";
 	}
 	
+	@RequestMapping("/employeestart")
+	public String employeestart() 
+	{
+		return "employeestart";
+	}
 }

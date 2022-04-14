@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+       
+<div th:fragment="footer" class="container">
+  <footer class="py-5">
+    <div class="row">
+      <div class="col-2">
+        <h5>Contact Us</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Locations</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Email</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Social Media</a></li>
+        </ul>
+      </div>
+
+      <div class="col-2">
+        <h5>About us</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a th:href="@{/whatWeDo}" class="nav-link p-0 text-muted">What we do</a></li>
+          <li class="nav-item mb-2"><a th:href="@{/services}" class="nav-link p-0 text-muted">Services</a></li>
+          <li class="nav-item mb-2"><a th:href="@{/faq}" class="nav-link p-0 text-muted">FAQs</a></li>
+
+        </ul>
+      </div>
+
+      <div class="col-2">
+        <h5>Career</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Apply here</a></li>
+          <li class="nav-item mb-2"><a th:href="@{/employeestart}" class="nav-link p-0 text-muted">Employee sign in</a></li>     
+        </ul>
+      </div>
+
+      <div class="col-4 offset-1">
+        <form>
+          <h5>Subscribe to our newsletter</h5>
+          <p>Monthly digest of whats new and exciting from us.</p>
+          <div class="d-flex w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+            <button class="btn btn-primary" type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="justify-content-between py-4 my-4 border-top">
+       <p class="text-center text-muted">&copy; 2022 Home Design Solutions</p>
+    </div>
+  </footer>
+</div>   
+</body>
+</html>
