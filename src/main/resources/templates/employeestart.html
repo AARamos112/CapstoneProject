@@ -6,13 +6,13 @@
 <title>Employee Page</title>
 </head>
 <body>
-<div th:insert="navbar :: navbar">  </div>
+<div th:insert="navbar :: navbar2">  </div>
 
 
 <div class="row row-cols-1 row-cols-md-3 g-4" style=margin-right:auto;margin-left:auto;padding-top:40px>
   <div class="col">
     <div class="card">
-     <img src="/images/HDS_logo.jpg" class="card-img-top" alt="...">
+     <img src="/images/HDS_logo.jpg" class="card-img-top" alt="logo">
   <div class="card-body">
     <h5 class="card-title">Human Resources</h5>
     <p class="card-text">Employee list and update form to add and delete employees from the database.</p>
@@ -22,7 +22,7 @@
   </div>
   <div class="col">
     <div class="card">
-      <img src="/images/inventory.jpeg" class="card-img-top" alt="...">
+      <img src="/images/inventory.jpeg" class="card-img-top" alt="warehouse">
       <div class="card-body">
         <h5 class="card-title">Inventory</h5>
         <p class="card-text">Check what is available first. In order to provide the customer with the very best service!</p>
@@ -32,10 +32,11 @@
   </div>
   <div class="col">
     <div class="card">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="/images/customer.jpg" class="card-img-top" alt="customer art">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        <h5 class="card-title">Customers</h5>
+        <p class="card-text">Use this form to update and add customer information</p>
+        <a th:href="@{/customerHome}" class="btn btn-primary stretched-link" style=margin:auto>Customer Form</a>
       </div>
     </div>
   </div>
@@ -49,10 +50,6 @@
     </div>
   </div>
 </div>
-
-
-
-
 
 </body>
 </html>

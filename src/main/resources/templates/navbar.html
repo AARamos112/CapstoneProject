@@ -28,5 +28,28 @@
     </div>    
 </nav>
 
+<nav th:fragment="navbar2" class="navbar navbar-expand-md bg-dark navbar-dark">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" th:href="@{/}">Home Design Solutions</a>
+        </div>
+        <ul class="nav navbar-nav">
+        	<li><a class="nav-link" th:href="@{/employeestart}">Main</a></li>
+        	
+            <li><a class="nav-link" th:href="@{/employeeHome}">HR</a></li>
+            
+            <li><a class="nav-link" th:href="@{/whatWeDo}">What we do</a></li>
+
+            <li><a class="nav-link" th:href="@{/services}">Services</a></li>
+            
+            <li><form th:action="@{/logout}" method="post">
+            <input type="submit" value="Sign Out" style=color:dark/>
+       		 </form></li>
+
+
+        </ul>
+    </div>    
+</nav>
+
 </body>
 </html>
