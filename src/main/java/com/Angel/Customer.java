@@ -22,7 +22,7 @@ public class Customer {
     private String lastName;
 
     @Column(name = "midInitial")
-    private String midInitial;
+    private String midinitial;
     
     @Column(name = "streetAddress")
     private String streetAddress;
@@ -67,14 +67,11 @@ public class Customer {
 		this.zip = zip;
 	}
     
-    public long getId() {
-        return id;
-    }
     public String getMidInitial() {
-		return midInitial;
+		return midinitial;
 	}
-	public void setMidInitial(String midInitial) {
-		this.midInitial = midInitial;
+	public void setMidInitial(String midinitial) {
+		this.midinitial = midinitial;
 	}
 	public String getStreetAddress() {
 		return streetAddress;
@@ -85,6 +82,8 @@ public class Customer {
 	public void setId(long id) {
         this.id = id;
     }
-
+	 public long getId() {
+	        return id;
+	    }
   
 }

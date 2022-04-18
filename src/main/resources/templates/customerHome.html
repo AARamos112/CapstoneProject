@@ -37,7 +37,7 @@
                     <td th:text="${customer.midInitial}"></td>
                     <td th:text="${customer.streetAddress}"></td>
                     <td th:text="${customer.city}"></td>
-                    <td th:text="${customer.state"></td>
+                    <td th:text="${customer.state}"></td>
                     <td th:text="${customer.zip}"></td>
                     <td> <a th:href="@{/showFormForCustUpdate/{id}(id=${customer.id})}" class="btn btn-primary">Update</a>
                         <a th:href="@{/deleteCustomer/{id}(id=${customer.id})}" class="btn btn-danger">Delete</a>
@@ -45,7 +45,7 @@
                 </tr>
             </tbody>
         </table>
-        <a th:href="@{/customerstart}"> Back to Customer Menu</a>
+        <a th:href="@{/employeestart}"> Back to Employee Menu</a>
     </div>
 </body>
 

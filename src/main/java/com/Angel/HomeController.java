@@ -97,17 +97,13 @@ public class HomeController {
 		return "employeestart";
 	}
 	
-	/*
-	 * @RequestMapping("/employeeHome") public String employeeHome() { return
-	 * "employeeHome"; }
-	 * 
-	 * 
-	 * @RequestMapping("/new_employee") public String new_employee() { return
-	 * "new_employee"; }
-	 * 
-	 * @RequestMapping("/update_employee") public String update_employee() { return
-	 * "update_employee"; }
-	 */
+	@RequestMapping("/aboutUs")
+	public String aboutUs() 
+	{
+		return "aboutUs";
+	}
+	
+
 	 
 	
 }
