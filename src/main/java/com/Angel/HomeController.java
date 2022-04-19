@@ -30,13 +30,7 @@ public class HomeController {
 	{
 		return "services";
 	}
-	
-	@RequestMapping("/products")
-	public String products() 
-	{
-		return "products";
-	}
-	
+		
 	@RequestMapping("/appliances")
 	public String appliances() 
 	{
@@ -60,13 +54,7 @@ public class HomeController {
 	{
 		return "floors";
 	}
-	
-	@RequestMapping("/countertops")
-	public String counterTops() 
-	{
-		return "counterTops";
-	}
-	
+		
 	@RequestMapping("/lighting")
 	public String lighting() 
 	{
@@ -103,6 +91,11 @@ public class HomeController {
 		return "aboutUs";
 	}
 	
+	@RequestMapping("/construction")
+	public String construction() 
+	{
+		return "construction";
+	}
 
 	 
 	

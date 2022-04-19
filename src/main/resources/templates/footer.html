@@ -15,9 +15,9 @@
       <div class="col-2">
         <h5>Contact Us</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Locations</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Email</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Social Media</a></li>
+          <li class="nav-item mb-2"><a th:href="@{/locations}" class="nav-link p-0 text-muted">Locations</a></li>
+          <li class="nav-item mb-2"><a th:href="@{/construction}" class="nav-link p-0 text-muted">Email</a></li>
+          <li class="nav-item mb-2"><a th:href="@{/construction}" class="nav-link p-0 text-muted">Social Media</a></li>
         </ul>
       </div>
 
@@ -34,7 +34,7 @@
       <div class="col-2">
         <h5>Career</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Apply here</a></li>
+          <li class="nav-item mb-2"><a th:href="@{/construction}" class="nav-link p-0 text-muted">Apply here</a></li>
           <li class="nav-item mb-2"><a th:href="@{/employeestart}" class="nav-link p-0 text-muted">Employee sign in</a></li>     
         </ul>
       </div>
@@ -46,7 +46,7 @@
           <div class="d-flex w-100 gap-2">
             <label for="newsletter1" class="visually-hidden">Email address</label>
             <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-            <button class="btn btn-primary" type="button">Subscribe</button>
+            <button class="btn btn-primary disabled" type="button">Subscribe</button>
           </div>
         </form>
       </div>

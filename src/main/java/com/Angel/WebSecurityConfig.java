@@ -25,7 +25,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		http
 			.authorizeRequests()
 			    .antMatchers(staticResources).permitAll()
-				.antMatchers("/", "/signin", "/locations", "/cabinets", "/countertops", "/appliances", "/faq", "/floors", "/index", "/lighting", "/products", "/services", "/sinks", "/test", "/whatWeDo", "/aboutUs").permitAll()
+				.antMatchers("/", "/signin", "/locations", "/cabinets", "/appliances", "/faq", "/floors", "/index", "/lighting", "/services", "/sinks", "/test", "/whatWeDo", "/aboutUs", "/construction").permitAll()
 				.anyRequest().authenticated()
 				.and()
 			.formLogin()
@@ -40,11 +40,16 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	public UserDetailsService userDetailsService() {
 		UserDetails user =
-			 User.withUsername("user")
+			User.withUsername("user")
 				.password("{bcrypt}$2a$10$VYBlEC25cfzpK/ugoPrNl.rEFbe4lc57VXAgWiGs9/4W01kjet2pi")
 				.roles("USER")
 				.build();
+		UserDetails user1 =
+				User.withUsername("user1")
+					.password("{bcrypt}$2a$10$VYBlEC25cfzpK/ugoPrNl.rEFbe4lc57VXAgWiGs9/4W01kjet2pi")
+					.roles("USER")
+					.build();
 
-		return new InMemoryUserDetailsManager(user);
+		return new InMemoryUserDetailsManager(user,user1);
 	}
 }
